@@ -4,7 +4,7 @@ import {routes} from './routes'
 import HomePage from './pages/HomePage/HomePage'
 import HeaderComponent from './components/HeaderComponent/HeaderComponent'
 import DefaultComponent from './components/DefaultComponent/DefaultComponent'
-
+import 'antd/dist/reset.css';
 
 export default function App() {
   return (

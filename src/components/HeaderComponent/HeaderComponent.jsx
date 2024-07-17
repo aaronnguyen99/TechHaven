@@ -11,7 +11,7 @@ import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 const HeaderComponent = () => {
   return (
     <div>
-      <WrapperHeader gutter={16}>
+      <WrapperHeader >
       <Col span={6}>
         <WrapperTextHeader>TechHaven</WrapperTextHeader>
       </Col>
@@ -20,10 +20,7 @@ const HeaderComponent = () => {
         size='large'
         textButton='Search'
         placeholder="input search text"
-
-        // allowClear
-        // onSearch={onSearch}
-    /></Col>
+        /></Col>
       <Col span={6} style={{  display:'flex',gap:'20px',alignItems:'center'}}>
       <WrapperHeaderAccount>
           <div >
