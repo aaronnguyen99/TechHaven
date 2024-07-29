@@ -5,6 +5,7 @@ import SliderComponent from '../../components/SliderComponent/SliderComponent'
 import slider1 from '../../assets/images/slider1.jfif'
 import slider2 from '../../assets/images/slider2.jfif'
 import CardComponent from '../../components/CardComponent/CardComponent'
+import NavbarComponent from '../../components/NavbarComponent/NavbarComponent'
 
 
 const HomePage = () => {
@@ -28,6 +29,7 @@ const HomePage = () => {
           <CardComponent/>
 
         </div>
+        <NavbarComponent/>
     </div>
     </>
   )
