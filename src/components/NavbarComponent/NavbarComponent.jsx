@@ -1,6 +1,6 @@
 import React from 'react'
 import { WrapperContent, WrapperLableText, WrapperTextValue } from './style'
-import { Checkbox } from 'antd'
+import { Checkbox, Rate } from 'antd'
 
 const NavbarComponent = () => {
     const onChange=()=>{}
@@ -19,13 +19,27 @@ const NavbarComponent = () => {
                     }
                 </Checkbox.Group>
                 )
+            case 'star':
+                return options.map((option)=>{  
+                        return (
+                            <Rate style={{fontSize:'12px'}} disabled defaultValue={option}/>
+                        )
+                    })
+                    
+            case 'price':
+                return options.map((option)=>{  
+                        return (
+                            <div style={{borderRadius:'12px',backgroundColor:'grey',width:'fit-content',padding:'4px'}}>{option}</div>
+                        )
+                    })
+                                   
             default:
                 return {}
                 
         }
     }
   return (
-    <div>
+    <div style={{backgroundColor:'white'}}>
         <WrapperLableText>Lable</WrapperLableText>
         <WrapperContent>
             {renderContent('text',['macbook','laptop','pc'])}
@@ -35,7 +49,14 @@ const NavbarComponent = () => {
                 ])}
 
         </WrapperContent>
-        
+        <WrapperContent>
+            {renderContent('star',[3,4,5])}
+
+        </WrapperContent>
+        <WrapperContent>
+            {renderContent('price',['<100','<500','>1000'])}
+
+        </WrapperContent>
     </div>
   )
 }

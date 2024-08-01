@@ -14,7 +14,7 @@ export const WrapperTextValue=styled.span`
 
 export const WrapperContent=styled.div`
     display:flex;
-    align-items:center;
+    // align-items:center;
     flex-direction:column;
     gap:12px;
 `
