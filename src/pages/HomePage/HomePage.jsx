@@ -1,11 +1,12 @@
 import React from 'react'
 import TypeProduct from '../../components/TypeProduct/TypeProduct'
-import { WrapperTypeProduct } from './style'
+import { WrapperButtonMore, WrapperTypeProduct } from './style'
 import SliderComponent from '../../components/SliderComponent/SliderComponent'
 import slider1 from '../../assets/images/slider1.jfif'
 import slider2 from '../../assets/images/slider2.jfif'
 import CardComponent from '../../components/CardComponent/CardComponent'
 import NavbarComponent from '../../components/NavbarComponent/NavbarComponent'
+import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 
 
 const HomePage = () => {
@@ -23,13 +24,35 @@ const HomePage = () => {
       </WrapperTypeProduct>
       </div>
 
-      <div id="container" style={{backgroundColor:'#efefef',padding:'0 120px'}}>      
+      <div id="container" style={{backgroundColor:'#efefef',padding:'0 120px',width:'100%',height:'1000px'}}>      
         <SliderComponent arrImages={[slider1,slider2]}/>
-        <div style={{marginTop:'20px',display:'flex',alignItems:'center',gap:'20px'}}>
+        <div style={{marginTop:'20px',display:'flex',alignItems:'center',gap:'20px',flexWrap:'wrap'}}>
           <CardComponent/>
-
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
+          <CardComponent/>
         </div>
-        <NavbarComponent/>
+        <div style={{width:'100%',display:'flex',justifyContent:'center',marginTop:'10px'}}>
+          <WrapperButtonMore textButton={'more'} type='outline' style={{
+            border:'1px solid rgb(11,116,229)',
+            color:'rgb(11,116,229)',
+            width:'240px',
+            height:'35px',
+            borderRadius:'4px'
+          }}
+          styleTextButton={{fontWeight:500}}/>
+        </div>
+        <div>
+        </div>
+        
     </div>
     </>
   )
