@@ -1,6 +1,6 @@
 import React from 'react'
 import TypeProduct from '../../components/TypeProduct/TypeProduct'
-import { WrapperButtonMore, WrapperTypeProduct } from './style'
+import { WrapperButtonMore, WrapperProduct, WrapperTypeProduct } from './style'
 import SliderComponent from '../../components/SliderComponent/SliderComponent'
 import slider1 from '../../assets/images/slider1.jfif'
 import slider2 from '../../assets/images/slider2.jfif'
@@ -24,9 +24,9 @@ const HomePage = () => {
       </WrapperTypeProduct>
       </div>
 
-      <div id="container" style={{backgroundColor:'#efefef',padding:'0 120px',width:'100%',height:'1000px'}}>      
+      <div id="container" style={{backgroundColor:'#efefef',padding:'0 120px',width:'100%',height:'1500px'}}>      
         <SliderComponent arrImages={[slider1,slider2]}/>
-        <div style={{marginTop:'20px',display:'flex',alignItems:'center',gap:'20px',flexWrap:'wrap'}}>
+        <WrapperProduct>
           <CardComponent/>
           <CardComponent/>
           <CardComponent/>
@@ -39,7 +39,7 @@ const HomePage = () => {
           <CardComponent/>
           <CardComponent/>
           <CardComponent/>
-        </div>
+        </WrapperProduct>
         <div style={{width:'100%',display:'flex',justifyContent:'center',marginTop:'10px'}}>
           <WrapperButtonMore textButton={'more'} type='outline' style={{
             border:'1px solid rgb(11,116,229)',

@@ -43,19 +43,6 @@ const NavbarComponent = () => {
         <WrapperLableText>Lable</WrapperLableText>
         <WrapperContent>
             {renderContent('text',['macbook','laptop','pc'])}
-            {renderContent('checkbox',[
-                {value:'a',lable:'A'},
-                {value:'b',lable:'B'},
-                ])}
-
-        </WrapperContent>
-        <WrapperContent>
-            {renderContent('star',[3,4,5])}
-
-        </WrapperContent>
-        <WrapperContent>
-            {renderContent('price',['<100','<500','>1000'])}
-
         </WrapperContent>
     </div>
   )
