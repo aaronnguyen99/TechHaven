@@ -15,5 +15,6 @@ export const WrapperNavbar=styled(Col)`
     border-radius:6px;
     height:fit-content;
     margin-top:20px;
+    width:200px;
 `
 

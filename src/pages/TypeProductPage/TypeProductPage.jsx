@@ -7,7 +7,8 @@ import { WrapperNavbar, WrapperProduct } from './style'
 const TypeProductPage = () => {
     const onChange=()=>{}
   return (
-        <div style={{padding:'0 120px',background:'#efefef'}}>
+        <div style={{width:'100%',background:'#efefef'}}>
+            <div style={{margin:'0 auto',width:'1300px'}}>
         <Row style={{flexWrap:'nowrap',paddingTop:'10px'}}>
             <WrapperNavbar span={4}>
                 <NavbarComponent/>
@@ -23,6 +24,7 @@ const TypeProductPage = () => {
                 <Pagination defaultCurrent={1} total={10} onChange={onChange} style={{textAlign:'center',marginTop:'10px',justifyContent:'center'}}/>
             </Col>
         </Row>
+        </div>
         </div>
   )
 }

@@ -23,8 +23,8 @@ const HomePage = () => {
         })}
       </WrapperTypeProduct>
       </div>
-
-      <div id="container" style={{backgroundColor:'#efefef',padding:'0 120px',width:'100%',height:'1500px'}}>      
+        <div className='body' style={{width:'100%',backgroundColor:'#efefef'}}>
+      <div id="container" style={{padding:'0 120px',height:'1500px',margin:'0 auto'}}>      
         <SliderComponent arrImages={[slider1,slider2]}/>
         <WrapperProduct>
           <CardComponent/>
@@ -53,6 +53,7 @@ const HomePage = () => {
         <div>
         </div>
         
+    </div>
     </div>
     </>
   )
