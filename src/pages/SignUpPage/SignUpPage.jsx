@@ -4,8 +4,13 @@ import InputForm from '../../components/InputForm/InputForm'
 import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 import imageLogo from '../../assets/images/login.jpg'
 import { Image } from 'antd'
+import { useNavigate } from 'react-router-dom'
 
 const SignUpPage = () => {
+    const navigate=useNavigate()
+    const handleNavigateSignin=()=>{
+      navigate('/signin')
+    }
   return (
     <div style={{display:'flex',alignItems:'center',justifyContent:'center',background:'#ccc',height:'100vh'}}>
       <div style={{display:'flex',width:'800px',height:'450px',borderRadius:'6px',background:'#fff'}}>
@@ -33,7 +38,7 @@ const SignUpPage = () => {
                     }}
                 >
                 </ButtonComponent>
-                <p>Already got an account <WrapperTextLight>Sign in</WrapperTextLight></p>
+                <p>Already got an account <WrapperTextLight onClick={handleNavigateSignin} style={{cursor:'pointer'}}>Sign in</WrapperTextLight></p>
         </WrapperContainernerLeft>
         <WrapperContainernerRight>
           <Image src={imageLogo} preview={false} height={450} width={400}/>
